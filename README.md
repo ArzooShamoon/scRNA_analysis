@@ -28,6 +28,8 @@ RMSD Between vs Within (green vs orange)
 
 Returns both the metric table and the ggplot objects for further customization.
 
+
+
 **Usage Example**
 out <- evaluate_cluster_resolutions(
   seurat_obj = integrated,
@@ -35,9 +37,11 @@ out <- evaluate_cluster_resolutions(
   dims_use = 1:15
 )
 
+
 # View results
 View(out$results)
 
 # Display plots
 print(out$plot_sil_dbi)
+
 print(out$plot_rmsd)
